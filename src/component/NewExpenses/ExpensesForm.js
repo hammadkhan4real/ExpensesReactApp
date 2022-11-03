@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react/cjs/react.production.min";
+import { useState } from 'react';
 import './ExpensesForm.css'
 
 const ExpensesForm = () => {
@@ -18,11 +18,12 @@ const ExpensesForm = () => {
      };
      const submitHandler = (event) =>{
          event.preventDefault();
-        const ExpenseData{
+        const ExpenseData = {
             title : enteredtitle,
             amount: enteredamount,
             date: new Date(entereddate),
         };
+        console.log(enteredtitle);
      }
     return(
         <form onSubmit={submitHandler}> 
