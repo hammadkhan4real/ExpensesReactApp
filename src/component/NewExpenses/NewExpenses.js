@@ -6,6 +6,9 @@ const NewExpenses = ()=> {
     return(
         <div className="new-expense">
             <ExpensesForm></ExpensesForm>
+            <div>
+                <button>Test</button>
+            </div>
 
         </div>
     )
